@@ -3,913 +3,911 @@ import "./App.css";
 
 const App = () => {
   return (
-    <div>
-      <section id="home" className="welcome-hero">
-        <div className="top-area">
-          <div className="header-area">
-            <nav
-              className="navbar navbar-default bootsnav  navbar-sticky navbar-scrollspy"
-              data-minus-value-desktop={70}
-              data-minus-value-mobile={55}
-              data-speed={1000}
-            >
-              <div className="container">
-                <div className="navbar-header">
-                  <button
-                    type="button"
-                    className="navbar-toggle"
-                    data-toggle="collapse"
-                    data-target="#navbar-menu"
-                  >
-                    <i className="fa fa-bars" />
-                  </button>
-                  <a className="navbar-brand" href="index.html">
-                    carvilla
-                    <span />
-                  </a>
-                </div>
-                <div
-                  className="collapse navbar-collapse menu-ui-design"
-                  id="navbar-menu"
-                >
-                  <ul
-                    className="nav navbar-nav navbar-right"
-                    data-in="fadeInDown"
-                    data-out="fadeOutUp"
-                  >
-                    <li className=" scroll active">
-                      <a href="#home">home</a>
-                    </li>
-                    <li className="scroll">
-                      <a href="#service">service</a>
-                    </li>
-                    <li className="scroll">
-                      <a href="#featured-cars">featured cars</a>
-                    </li>
-                    <li className="scroll">
-                      <a href="#new-cars">new cars</a>
-                    </li>
-                    <li className="scroll">
-                      <a href="#brand">brands</a>
-                    </li>
-                    <li className="scroll">
-                      <a href="#contact">contact</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </div>
-          <div className="clearfix" />
-        </div>
-        <div className="container">
-          <div className="welcome-hero-txt">
-            <h2>get your desired car in resonable price</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
-            <button className="welcome-btn" onclick="window.location.href='#'">
-              contact us
-            </button>
+   <div>
+  <div className="hero_area">
+    {/* header section strats */}
+    <header className="header_section">
+      <nav className="navbar navbar-expand-lg custom_nav-container ">
+        <a className="navbar-brand" href="index.html">
+          <span>
+            Giftos
+          </span>
+        </a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span className />
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul className="navbar-nav  ">
+            <li className="nav-item active">
+              <a className="nav-link" href="index.html">Home <span className="sr-only">(current)</span></a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="shop.html">
+                Shop
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="why.html">
+                Why Us
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="testimonial.html">
+                Testimonial
+              </a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div className="user_option">
+            <a href>
+              <i className="fa fa-user" aria-hidden="true" />
+              <span>
+                Login
+              </span>
+            </a>
+            <a href>
+              <i className="fa fa-shopping-bag" aria-hidden="true" />
+            </a>
+            <form className="form-inline ">
+              <button className="btn nav_search-btn" type="submit">
+                <i className="fa fa-search" aria-hidden="true" />
+              </button>
+            </form>
           </div>
         </div>
-        <div className="container">
-          <div className="row">
-            <div className="col-md-12">
-              <div className="model-search-content">
+      </nav>
+    </header>
+    {/* end header section */}
+    {/* slider section */}
+    <section className="slider_section">
+      <div className="slider_container">
+        <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="container-fluid">
                 <div className="row">
-                  <div className="col-md-offset-1 col-md-2 col-sm-12">
-                    <div className="single-model-search">
-                      <h2>select year</h2>
-                      <div className="model-select-icon">
-                        <select className="form-control">
-                          <option value="default">year</option>
-                          <option value={2018}>2018</option>
-                          <option value={2017}>2017</option>
-                          <option value={2016}>2016</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="single-model-search">
-                      <h2>body style</h2>
-                      <div className="model-select-icon">
-                        <select className="form-control">
-                          <option value="default">style</option>
-                          <option value="sedan">sedan</option>
-                          <option value="van">van</option>
-                          <option value="roadster">roadster</option>
-                        </select>
-                      </div>
+                  <div className="col-md-7">
+                    <div className="detail-box">
+                      <h1>
+                        Welcome To Our <br />
+                        Gift Shop
+                      </h1>
+                      <p>
+                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      </p>
+                      <a href>
+                        Contact Us
+                      </a>
                     </div>
                   </div>
-                  <div className="col-md-offset-1 col-md-2 col-sm-12">
-                    <div className="single-model-search">
-                      <h2>select make</h2>
-                      <div className="model-select-icon">
-                        <select className="form-control">
-                          <option value="default">make</option>
-                          <option value="toyota">toyota</option>
-                          <option value="holden">holden</option>
-                          <option value="maecedes-benz">maecedes-benz.</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="single-model-search">
-                      <h2>car condition</h2>
-                      <div className="model-select-icon">
-                        <select className="form-control">
-                          <option value="default">condition</option>
-                          <option value="something">something</option>
-                          <option value="something">something</option>
-                          <option value="something">something</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-offset-1 col-md-2 col-sm-12">
-                    <div className="single-model-search">
-                      <h2>select model</h2>
-                      <div className="model-select-icon">
-                        <select className="form-control">
-                          <option value="default">model</option>
-                          <option value="kia-rio">kia-rio</option>
-                          <option value="mitsubishi">mitsubishi</option>
-                          <option value="ford">ford</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div className="single-model-search">
-                      <h2>select price</h2>
-                      <div className="model-select-icon">
-                        <select className="form-control">
-                          <option value="default">price</option>
-                          <option value="$0.00">$0.00</option>
-                          <option value="$0.00">$0.00</option>
-                          <option value="$0.00">$0.00</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-2 col-sm-12">
-                    <div className="single-model-search text-center">
-                      <button
-                        className="welcome-btn model-search-btn"
-                        onclick="window.location.href='#'"
-                      >
-                        search
-                      </button>
+                  <div className="col-md-5 ">
+                    <div className="img-box">
+                      <img src="images/slider-img.png" alt />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+            <div className="carousel-item ">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-7">
+                    <div className="detail-box">
+                      <h1>
+                        Welcome To Our <br />
+                        Gift Shop
+                      </h1>
+                      <p>
+                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      </p>
+                      <a href>
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col-md-5 ">
+                    <div className="img-box">
+                      <img src="images/slider-img.png" alt />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="carousel-item ">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-7">
+                    <div className="detail-box">
+                      <h1>
+                        Welcome To Our <br />
+                        Gift Shop
+                      </h1>
+                      <p>
+                        Sequi perspiciatis nulla reiciendis, rem, tenetur impedit, eveniet non necessitatibus error distinctio mollitia suscipit. Nostrum fugit doloribus consequatur distinctio esse, possimus maiores aliquid repellat beatae cum, perspiciatis enim, accusantium perferendis.
+                      </p>
+                      <a href>
+                        Contact Us
+                      </a>
+                    </div>
+                  </div>
+                  <div className="col-md-5 ">
+                    <div className="img-box">
+                      <img src="images/slider-img.png" alt />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="carousel_btn-box">
+            <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <i className="fa fa-arrow-left" aria-hidden="true" />
+              <span className="sr-only">Previous</span>
+            </a>
+            <img src="images/line.png" alt />
+            <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <i className="fa fa-arrow-right" aria-hidden="true" />
+              <span className="sr-only">Next</span>
+            </a>
           </div>
         </div>
-      </section>
-      <section id="service" className="service">
-        <div className="container">
-          <div className="service-content">
-            <div className="row">
-              <div className="col-md-4 col-sm-6">
-                <div className="single-service-item">
-                  <div className="single-service-icon">
-                    <i className="flaticon-car" />
-                  </div>
-                  <h2>
-                    <a href="#">
-                      largest dealership <span> of</span> car
-                    </a>
-                  </h2>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut den fugit sed quia.
-                  </p>
-                </div>
+      </div>
+    </section>
+    {/* end slider section */}
+  </div>
+  {/* end hero area */}
+  {/* shop section */}
+  <section className="shop_section layout_padding">
+    <div className="container">
+      <div className="heading_container heading_center">
+        <h2>
+          Latest Products
+        </h2>
+      </div>
+      <div className="row">
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p1.png" alt />
               </div>
-              <div className="col-md-4 col-sm-6">
-                <div className="single-service-item">
-                  <div className="single-service-icon">
-                    <i className="flaticon-car-repair" />
-                  </div>
-                  <h2>
-                    <a href="#">unlimited repair warrenty</a>
-                  </h2>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut den fugit sed quia.
-                  </p>
-                </div>
+              <div className="detail-box">
+                <h6>
+                  Ring
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $200
+                  </span>
+                </h6>
               </div>
-              <div className="col-md-4 col-sm-6">
-                <div className="single-service-item">
-                  <div className="single-service-icon">
-                    <i className="flaticon-car-1" />
-                  </div>
-                  <h2>
-                    <a href="#">insurence support</a>
-                  </h2>
-                  <p>
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
-                    odit aut den fugit sed quia.
-                  </p>
-                </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
-      </section>
-      <section id="new-cars" className="new-cars">
-        <div className="container">
-          <div className="section-header">
-            <p>
-              checkout <span>the</span> latest cars
-            </p>
-            <h2>newest cars</h2>
-          </div>
-          <div className="new-cars-content">
-            <div className="owl-carousel owl-theme" id="new-cars-carousel">
-              <div className="new-cars-item">
-                <div className="single-new-cars-item">
-                  <div className="row">
-                    <div className="col-md-7 col-sm-12">
-                      <div className="new-cars-img">
-                        <img
-                          src="../public/images/new-cars-model/ncm1.png"
-                          alt="img"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-5 col-sm-12">
-                      <div className="new-cars-txt">
-                        <h2>
-                          <a href="#">
-                            chevrolet camaro <span> za100</span>
-                          </a>
-                        </h2>
-                        <p>
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum.
-                        </p>
-                        <p className="new-cars-para2">
-                          Sed ut pers unde omnis iste natus error sit voluptatem
-                          accusantium doloremque laudantium.
-                        </p>
-                        <button
-                          className="welcome-btn new-cars-btn"
-                          onclick="window.location.href='#'"
-                        >
-                          view details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p2.png" alt />
               </div>
-              <div className="new-cars-item">
-                <div className="single-new-cars-item">
-                  <div className="row">
-                    <div className="col-md-7 col-sm-12">
-                      <div className="new-cars-img">
-                        <img
-                          src="../public/images/new-cars-model/ncm2.png"
-                          alt="img"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-5 col-sm-12">
-                      <div className="new-cars-txt">
-                        <h2>
-                          <a href="#">BMW series-3 wagon</a>
-                        </h2>
-                        <p>
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum.
-                        </p>
-                        <p className="new-cars-para2">
-                          Sed ut pers unde omnis iste natus error sit voluptatem
-                          accusantium doloremque laudantium.
-                        </p>
-                        <button
-                          className="welcome-btn new-cars-btn"
-                          onclick="window.location.href='#'"
-                        >
-                          view details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="detail-box">
+                <h6>
+                  Watch
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $300
+                  </span>
+                </h6>
               </div>
-              <div className="new-cars-item">
-                <div className="single-new-cars-item">
-                  <div className="row">
-                    <div className="col-md-7 col-sm-12">
-                      <div className="new-cars-img">
-                        <img
-                          src="../public/images/new-cars-model/ncm3.png"
-                          alt="img"
-                        />
-                      </div>
-                    </div>
-                    <div className="col-md-5 col-sm-12">
-                      <div className="new-cars-txt">
-                        <h2>
-                          <a href="#">ferrari 488 superfast</a>
-                        </h2>
-                        <p>
-                          Duis aute irure dolor in reprehenderit in voluptate
-                          velit esse cillum dolore eu fugiat nulla pariatur.
-                          Excepteur sint occaecat cupidatat non proident, sunt
-                          in culpa qui officia deserunt mollit anim id est
-                          laborum.
-                        </p>
-                        <p className="new-cars-para2">
-                          Sed ut pers unde omnis iste natus error sit voluptatem
-                          accusantium doloremque laudantium.
-                        </p>
-                        <button
-                          className="welcome-btn new-cars-btn"
-                          onclick="window.location.href='#'"
-                        >
-                          view details
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
-      </section>
-      <section id="featured-cars" className="featured-cars">
-        <div className="container">
-          <div className="section-header">
-            <p>
-              checkout <span>the</span> featured cars
-            </p>
-            <h2>featured cars</h2>
-          </div>
-          <div className="featured-cars-content">
-            <div className="row">
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc1.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">BMW 6-series gran coupe</a>
-                    </h2>
-                    <h3>$89,395</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p3.png" alt />
               </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc2.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        chevrolet camaro <span>wmv20</span>
-                      </a>
-                    </h2>
-                    <h3>$66,575</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
+              <div className="detail-box">
+                <h6>
+                  Teddy Bear
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $110
+                  </span>
+                </h6>
               </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc3.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        lamborghini <span>v520</span>
-                      </a>
-                    </h2>
-                    <h3>$125,250</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
               </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc4.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        audi <span> a3</span> sedan
-                      </a>
-                    </h2>
-                    <h3>$95,500</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="row">
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc4.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        infiniti <span>z5</span>
-                      </a>
-                    </h2>
-                    <h3>$36,850</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc5.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        porsche <span>718</span> cayman
-                      </a>
-                    </h2>
-                    <h3>$48,500</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc7.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        <span>bmw 8-</span>series coupe
-                      </a>
-                    </h2>
-                    <h3>$56,000</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-3 col-md-4 col-sm-6">
-                <div className="single-featured-cars">
-                  <div className="featured-img-box">
-                    <div className="featured-cars-img">
-                      <img
-                        src="../public/images/featured-cars/fc8.png"
-                        alt="cars"
-                      />
-                    </div>
-                    <div className="featured-model-info">
-                      <p>
-                        model: 2017
-                        <span className="featured-mi-span"> 3100 mi</span>
-                        <span className="featured-hp-span"> 240HP</span>
-                        automatic
-                      </p>
-                    </div>
-                  </div>
-                  <div className="featured-cars-txt">
-                    <h2>
-                      <a href="#">
-                        BMW <span> x</span>series-6
-                      </a>
-                    </h2>
-                    <h3>$75,800</h3>
-                    <p>
-                      Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                      amet, consectetur, adipisci velit, sed quia non.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-      </section>
-      <section id="clients-say" className="clients-say">
-        <div className="container">
-          <div className="section-header">
-            <h2>what our clients say</h2>
-          </div>
-          <div className="row">
-            <div className="owl-carousel testimonial-carousel">
-              <div className="col-sm-3 col-xs-12">
-                <div className="single-testimonial-box">
-                  <div className="testimonial-description">
-                    <div className="testimonial-info">
-                      <div className="testimonial-img">
-                        <img
-                          src="../public/images/clients/c1.png"
-                          alt="image of clients person"
-                        />
-                      </div>
-                    </div>
-                    <div className="testimonial-comment">
-                      <p>
-                        Sed ut pers unde omnis iste natus error sit voluptatem
-                        accusantium dolor laudan rem aperiam, eaque ipsa quae ab
-                        illo inventore verit.
-                      </p>
-                    </div>
-                    <div className="testimonial-person">
-                      <h2>
-                        <a href="#">tomas lili</a>
-                      </h2>
-                      <h4>new york</h4>
-                    </div>
-                  </div>
-                </div>
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p4.png" alt />
               </div>
-              <div className="col-sm-3 col-xs-12">
-                <div className="single-testimonial-box">
-                  <div className="testimonial-description">
-                    <div className="testimonial-info">
-                      <div className="testimonial-img">
-                        <img
-                          src="../public/images/clients/c2.png"
-                          alt="image of clients person"
-                        />
-                      </div>
-                    </div>
-                    <div className="testimonial-comment">
-                      <p>
-                        Sed ut pers unde omnis iste natus error sit voluptatem
-                        accusantium dolor laudan rem aperiam, eaque ipsa quae ab
-                        illo inventore verit.
-                      </p>
-                    </div>
-                    <div className="testimonial-person">
-                      <h2>
-                        <a href="#">romi rain</a>
-                      </h2>
-                      <h4>london</h4>
-                    </div>
-                  </div>
-                </div>
+              <div className="detail-box">
+                <h6>
+                  Flower Bouquet
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $45
+                  </span>
+                </h6>
               </div>
-              <div className="col-sm-3 col-xs-12">
-                <div className="single-testimonial-box">
-                  <div className="testimonial-description">
-                    <div className="testimonial-info">
-                      <div className="testimonial-img">
-                        <img
-                          src="../public/images/clients/c3.png"
-                          alt="image of clients person"
-                        />
-                      </div>
-                    </div>
-                    <div className="testimonial-comment">
-                      <p>
-                        Sed ut pers unde omnis iste natus error sit voluptatem
-                        accusantium dolor laudan rem aperiam, eaque ipsa quae ab
-                        illo inventore verit.
-                      </p>
-                    </div>
-                    <div className="testimonial-person">
-                      <h2>
-                        <a href="#">john doe</a>
-                      </h2>
-                      <h4>washington</h4>
-                    </div>
-                  </div>
-                </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
               </div>
-            </div>
+            </a>
           </div>
         </div>
-      </section>
-      <section id="brand" className="brand">
-        <div className="container">
-          <div className="brand-area">
-            <div className="owl-carousel owl-theme brand-item">
-              <div className="item">
-                <a href="#">
-                  <img src="../public/images/brand/br1.png" alt="brand-image" />
-                </a>
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p5.png" alt />
               </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../public/images/brand/br2.png" alt="brand-image" />
-                </a>
+              <div className="detail-box">
+                <h6>
+                  Teddy Bear
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $95
+                  </span>
+                </h6>
               </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../public/images/brand/br3.png" alt="brand-image" />
-                </a>
+              <div className="new">
+                <span>
+                  New
+                </span>
               </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../public/images/brand/br4.png" alt="brand-image" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../public/images/brand/br5.png" alt="brand-image" />
-                </a>
-              </div>
-              <div className="item">
-                <a href="#">
-                  <img src="../public/images/brand/br6.png" alt="brand-image" />
-                </a>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-      </section>
-      <section id="blog" className="blog" />
-      <footer id="contact" className="contact">
-        <div className="container">
-          <div className="footer-top">
-            <div className="row">
-              <div className="col-md-3 col-sm-6">
-                <div className="single-footer-widget">
-                  <div className="footer-logo">
-                    <a href="index.html">carvilla</a>
-                  </div>
-                  <p>
-                    Ased do eiusm tempor incidi ut labore et dolore magnaian
-                    aliqua. Ut enim ad minim veniam.
-                  </p>
-                  <div className="footer-contact">
-                    <p>info@themesine.com</p>
-                    <p>+1 (885) 2563154554</p>
-                  </div>
-                </div>
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p6.png" alt />
               </div>
-              <div className="col-md-2 col-sm-6">
-                <div className="single-footer-widget">
-                  <h2>about devloon</h2>
-                  <ul>
-                    <li>
-                      <a href="#">about us</a>
-                    </li>
-                    <li>
-                      <a href="#">career</a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        terms <span> of service</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">privacy policy</a>
-                    </li>
-                  </ul>
-                </div>
+              <div className="detail-box">
+                <h6>
+                  Flower Bouquet
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $70
+                  </span>
+                </h6>
               </div>
-              <div className="col-md-3 col-xs-12">
-                <div className="single-footer-widget">
-                  <h2>top brands</h2>
-                  <div className="row">
-                    <div className="col-md-7 col-xs-6">
-                      <ul>
-                        <li>
-                          <a href="#">BMW</a>
-                        </li>
-                        <li>
-                          <a href="#">lamborghini</a>
-                        </li>
-                        <li>
-                          <a href="#">camaro</a>
-                        </li>
-                        <li>
-                          <a href="#">audi</a>
-                        </li>
-                        <li>
-                          <a href="#">infiniti</a>
-                        </li>
-                        <li>
-                          <a href="#">nissan</a>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="col-md-5 col-xs-6">
-                      <ul>
-                        <li>
-                          <a href="#">ferrari</a>
-                        </li>
-                        <li>
-                          <a href="#">porsche</a>
-                        </li>
-                        <li>
-                          <a href="#">land rover</a>
-                        </li>
-                        <li>
-                          <a href="#">aston martin</a>
-                        </li>
-                        <li>
-                          <a href="#">mersedes</a>
-                        </li>
-                        <li>
-                          <a href="#">opel</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
               </div>
-              <div className="col-md-offset-1 col-md-3 col-sm-6">
-                <div className="single-footer-widget">
-                  <h2>news letter</h2>
-                  <div className="footer-newsletter">
-                    <p>Subscribe to get latest news update and informations</p>
-                  </div>
-                  <div className="hm-foot-email">
-                    <div className="foot-email-box">
-                      <input
-                        type="text"
-                        className="form-control"
-                        placeholder="Add Email"
-                      />
-                    </div>
-                    <div className="foot-email-subscribe">
-                      <span>
-                        <i className="fa fa-arrow-right" />
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="footer-copyright">
-            <div className="row">
-              <div className="col-sm-6">
-                <p>
-                  © copyright.designed and developed by{" "}
-                  <a href="https://www.themesine.com/">themesine</a>.
-                </p>
-              </div>
-              <div className="col-sm-6">
-                <div className="footer-social">
-                  <a href="#">
-                    <i className="fa fa-facebook" />
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-instagram" />
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-linkedin" />
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-pinterest-p" />
-                  </a>
-                  <a href="#">
-                    <i className="fa fa-behance" />
-                  </a>
-                </div>
-              </div>
-            </div>
+            </a>
           </div>
         </div>
-        <div id="scroll-Top">
-          <div className="return-to-top">
-            <i
-              className="fa fa-angle-up "
-              id="scroll-top"
-              data-toggle="tooltip"
-              data-placement="top"
-              title
-              data-original-title="Back to Top"
-              aria-hidden="true"
-            />
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p7.png" alt />
+              </div>
+              <div className="detail-box">
+                <h6>
+                  Watch
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $400
+                  </span>
+                </h6>
+              </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
           </div>
         </div>
-      </footer>
+        <div className="col-sm-6 col-md-4 col-lg-3">
+          <div className="box">
+            <a href>
+              <div className="img-box">
+                <img src="../public/images/p8.png" alt />
+              </div>
+              <div className="detail-box">
+                <h6>
+                  Ring
+                </h6>
+                <h6>
+                  Price
+                  <span>
+                    $450
+                  </span>
+                </h6>
+              </div>
+              <div className="new">
+                <span>
+                  New
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="btn-box">
+        <a href>
+          View All Products
+        </a>
+      </div>
     </div>
+  </section>pud
+  {/* end shop section */}
+  {/* saving section */}
+  <section className="saving_section ">
+    <div className="box">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-lg-6">
+            <div className="img-box">
+              <img src="images/saving-img.png" alt />
+            </div>
+          </div>
+          <div className="col-lg-6">
+            <div className="detail-box">
+              <div className="heading_container">
+                <h2>
+                  Best Savings on <br />
+                  new arrivals
+                </h2>
+              </div>
+              <p>
+                Qui ex dolore at repellat, quia neque doloribus omnis adipisci, ipsum eos odio fugit ut eveniet blanditiis praesentium totam non nostrum dignissimos nihil eius facere et eaque. Qui, animi obcaecati.
+              </p>
+              <div className="btn-box">
+                <a href="#" className="btn1">
+                  Buy Now
+                </a>
+                <a href="#" className="btn2">
+                  See More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* end saving section */}
+  {/* why section */}
+  <section className="why_section layout_padding">
+    <div className="container">
+      <div className="heading_container heading_center">
+        <h2>
+          Why Shop With Us
+        </h2>
+      </div>
+      <div className="row">
+        <div className="col-md-4">
+          <div className="box ">
+            <div className="img-box">
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style={{enableBackground: 'new 0 0 512 512'}} xmlSpace="preserve">
+                <g>
+                  <g>
+                    <path d="M476.158,231.363l-13.259-53.035c3.625-0.77,6.345-3.986,6.345-7.839v-8.551c0-18.566-15.105-33.67-33.67-33.67h-60.392
+           V110.63c0-9.136-7.432-16.568-16.568-16.568H50.772c-9.136,0-16.568,7.432-16.568,16.568V256c0,4.427,3.589,8.017,8.017,8.017
+           c4.427,0,8.017-3.589,8.017-8.017V110.63c0-0.295,0.239-0.534,0.534-0.534h307.841c0.295,0,0.534,0.239,0.534,0.534v145.372
+           c0,4.427,3.589,8.017,8.017,8.017c4.427,0,8.017-3.589,8.017-8.017v-9.088h94.569c0.008,0,0.014,0.002,0.021,0.002
+           c0.008,0,0.015-0.001,0.022-0.001c11.637,0.008,21.518,7.646,24.912,18.171h-24.928c-4.427,0-8.017,3.589-8.017,8.017v17.102
+           c0,13.851,11.268,25.119,25.119,25.119h9.086v35.273h-20.962c-6.886-19.883-25.787-34.205-47.982-34.205
+           s-41.097,14.322-47.982,34.205h-3.86v-60.393c0-4.427-3.589-8.017-8.017-8.017c-4.427,0-8.017,3.589-8.017,8.017v60.391H192.817
+           c-6.886-19.883-25.787-34.205-47.982-34.205s-41.097,14.322-47.982,34.205H50.772c-0.295,0-0.534-0.239-0.534-0.534v-17.637
+           h34.739c4.427,0,8.017-3.589,8.017-8.017s-3.589-8.017-8.017-8.017H8.017c-4.427,0-8.017,3.589-8.017,8.017
+           s3.589,8.017,8.017,8.017h26.188v17.637c0,9.136,7.432,16.568,16.568,16.568h43.304c-0.002,0.178-0.014,0.355-0.014,0.534
+           c0,27.996,22.777,50.772,50.772,50.772s50.772-22.776,50.772-50.772c0-0.18-0.012-0.356-0.014-0.534h180.67
+           c-0.002,0.178-0.014,0.355-0.014,0.534c0,27.996,22.777,50.772,50.772,50.772c27.995,0,50.772-22.776,50.772-50.772
+           c0-0.18-0.012-0.356-0.014-0.534h26.203c4.427,0,8.017-3.589,8.017-8.017v-85.511C512,251.989,496.423,234.448,476.158,231.363z
+            M375.182,144.301h60.392c9.725,0,17.637,7.912,17.637,17.637v0.534h-78.029V144.301z M375.182,230.881v-52.376h71.235
+           l13.094,52.376H375.182z M144.835,401.904c-19.155,0-34.739-15.583-34.739-34.739s15.584-34.739,34.739-34.739
+           c19.155,0,34.739,15.583,34.739,34.739S163.99,401.904,144.835,401.904z M427.023,401.904c-19.155,0-34.739-15.583-34.739-34.739
+           s15.584-34.739,34.739-34.739c19.155,0,34.739,15.583,34.739,34.739S446.178,401.904,427.023,401.904z M495.967,299.29h-9.086
+           c-5.01,0-9.086-4.076-9.086-9.086v-9.086h18.171V299.29z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M144.835,350.597c-9.136,0-16.568,7.432-16.568,16.568c0,9.136,7.432,16.568,16.568,16.568
+           c9.136,0,16.568-7.432,16.568-16.568C161.403,358.029,153.971,350.597,144.835,350.597z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M427.023,350.597c-9.136,0-16.568,7.432-16.568,16.568c0,9.136,7.432,16.568,16.568,16.568
+           c9.136,0,16.568-7.432,16.568-16.568C443.591,358.029,436.159,350.597,427.023,350.597z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M332.96,316.393H213.244c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017H332.96
+           c4.427,0,8.017-3.589,8.017-8.017S337.388,316.393,332.96,316.393z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M127.733,282.188H25.119c-4.427,0-8.017,3.589-8.017,8.017s3.589,8.017,8.017,8.017h102.614
+           c4.427,0,8.017-3.589,8.017-8.017S132.16,282.188,127.733,282.188z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M278.771,173.37c-3.13-3.13-8.207-3.13-11.337,0.001l-71.292,71.291l-37.087-37.087c-3.131-3.131-8.207-3.131-11.337,0
+           c-3.131,3.131-3.131,8.206,0,11.337l42.756,42.756c1.565,1.566,3.617,2.348,5.668,2.348s4.104-0.782,5.668-2.348l76.96-76.96
+           C281.901,181.576,281.901,176.501,278.771,173.37z" />
+                  </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+            </div>
+            <div className="detail-box">
+              <h5>
+                Fast Delivery
+              </h5>
+              <p>
+                variations of passages of Lorem Ipsum available
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="box ">
+            <div className="img-box">
+              <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490.667 490.667" style={{enableBackground: 'new 0 0 490.667 490.667'}} xmlSpace="preserve">
+                <g>
+                  <g>
+                    <path d="M138.667,192H96c-5.888,0-10.667,4.779-10.667,10.667V288c0,5.888,4.779,10.667,10.667,10.667s10.667-4.779,10.667-10.667
+           v-74.667h32c5.888,0,10.667-4.779,10.667-10.667S144.555,192,138.667,192z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M117.333,234.667H96c-5.888,0-10.667,4.779-10.667,10.667S90.112,256,96,256h21.333c5.888,0,10.667-4.779,10.667-10.667
+           S123.221,234.667,117.333,234.667z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M245.333,0C110.059,0,0,110.059,0,245.333s110.059,245.333,245.333,245.333s245.333-110.059,245.333-245.333
+           S380.608,0,245.333,0z M245.333,469.333c-123.52,0-224-100.48-224-224s100.48-224,224-224s224,100.48,224,224
+           S368.853,469.333,245.333,469.333z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M386.752,131.989C352.085,88.789,300.544,64,245.333,64s-106.752,24.789-141.419,67.989
+           c-3.691,4.587-2.965,11.307,1.643,14.997c4.587,3.691,11.307,2.965,14.976-1.643c30.613-38.144,76.096-60.011,124.8-60.011
+           s94.187,21.867,124.779,60.011c2.112,2.624,5.205,3.989,8.32,3.989c2.368,0,4.715-0.768,6.677-2.347
+           C389.717,143.296,390.443,136.576,386.752,131.989z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M376.405,354.923c-4.224-4.032-11.008-3.861-15.061,0.405c-30.613,32.235-71.808,50.005-116.011,50.005
+           s-85.397-17.771-115.989-50.005c-4.032-4.309-10.816-4.437-15.061-0.405c-4.309,4.053-4.459,10.816-0.405,15.083
+           c34.667,36.544,81.344,56.661,131.456,56.661s96.789-20.117,131.477-56.661C380.864,365.739,380.693,358.976,376.405,354.923z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M206.805,255.723c15.701-2.027,27.861-15.488,27.861-31.723c0-17.643-14.357-32-32-32h-21.333
+           c-5.888,0-10.667,4.779-10.667,10.667v42.581c0,0.043,0,0.107,0,0.149V288c0,5.888,4.779,10.667,10.667,10.667
+           S192,293.888,192,288v-16.917l24.448,24.469c2.091,2.069,4.821,3.115,7.552,3.115c2.731,0,5.461-1.045,7.531-3.136
+           c4.16-4.16,4.16-10.923,0-15.083L206.805,255.723z M192,234.667v-21.333h10.667c5.867,0,10.667,4.779,10.667,10.667
+           s-4.8,10.667-10.667,10.667H192z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M309.333,277.333h-32v-64h32c5.888,0,10.667-4.779,10.667-10.667S315.221,192,309.333,192h-42.667
+           c-5.888,0-10.667,4.779-10.667,10.667V288c0,5.888,4.779,10.667,10.667,10.667h42.667c5.888,0,10.667-4.779,10.667-10.667
+           S315.221,277.333,309.333,277.333z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M288,234.667h-21.333c-5.888,0-10.667,4.779-10.667,10.667S260.779,256,266.667,256H288
+           c5.888,0,10.667-4.779,10.667-10.667S293.888,234.667,288,234.667z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M394.667,277.333h-32v-64h32c5.888,0,10.667-4.779,10.667-10.667S400.555,192,394.667,192H352
+           c-5.888,0-10.667,4.779-10.667,10.667V288c0,5.888,4.779,10.667,10.667,10.667h42.667c5.888,0,10.667-4.779,10.667-10.667
+           S400.555,277.333,394.667,277.333z" />
+                  </g>
+                </g>
+                <g>
+                  <g>
+                    <path d="M373.333,234.667H352c-5.888,0-10.667,4.779-10.667,10.667S346.112,256,352,256h21.333
+           c5.888,0,10.667-4.779,10.667-10.667S379.221,234.667,373.333,234.667z" />
+                  </g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+                <g>
+                </g>
+              </svg>
+            </div>
+            <div className="detail-box">
+              <h5>
+                Free Shiping
+              </h5>
+              <p>
+                variations of passages of Lorem Ipsum available
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-4">
+          <div className="box ">
+            <div className="img-box">
+              <svg id="_30_Premium" height={512} viewBox="0 0 512 512" width={512} xmlns="http://www.w3.org/2000/svg" data-name="30_Premium">
+                <g id="filled">
+                  <path d="m252.92 300h3.08a124.245 124.245 0 1 0 -4.49-.09c.075.009.15.023.226.03.394.039.789.06 1.184.06zm-96.92-124a100 100 0 1 1 100 100 100.113 100.113 0 0 1 -100-100z" />
+                  <path d="m447.445 387.635-80.4-80.4a171.682 171.682 0 0 0 60.955-131.235c0-94.841-77.159-172-172-172s-172 77.159-172 172c0 73.747 46.657 136.794 112 161.2v158.8c-.3 9.289 11.094 15.384 18.656 9.984l41.344-27.562 41.344 27.562c7.574 5.4 18.949-.7 18.656-9.984v-70.109l46.6 46.594c6.395 6.789 18.712 3.025 20.253-6.132l9.74-48.724 48.725-9.742c9.163-1.531 12.904-13.893 6.127-20.252zm-339.445-211.635c0-81.607 66.393-148 148-148s148 66.393 148 148-66.393 148-148 148-148-66.393-148-148zm154.656 278.016a12 12 0 0 0 -13.312 0l-29.344 19.562v-129.378a172.338 172.338 0 0 0 72 0v129.38zm117.381-58.353a12 12 0 0 0 -9.415 9.415l-6.913 34.58-47.709-47.709v-54.749a171.469 171.469 0 0 0 31.467-15.6l67.151 67.152z" />
+                  <path d="m287.62 236.985c8.349 4.694 19.251-3.212 17.367-12.618l-5.841-35.145 25.384-25c7.049-6.5 2.89-19.3-6.634-20.415l-35.23-5.306-15.933-31.867c-4.009-8.713-17.457-8.711-21.466 0l-15.933 31.866-35.23 5.306c-9.526 1.119-13.681 13.911-6.634 20.415l25.384 25-5.841 35.145c-1.879 9.406 9 17.31 17.367 12.618l31.62-16.414zm-53-32.359 2.928-17.615a12 12 0 0 0 -3.417-10.516l-12.721-12.531 17.658-2.66a12 12 0 0 0 8.947-6.5l7.985-15.971 7.985 15.972a12 12 0 0 0 8.947 6.5l17.658 2.66-12.723 12.535a12 12 0 0 0 -3.417 10.516l2.928 17.615-15.849-8.231a12 12 0 0 0 -11.058 0z" />
+                </g>
+              </svg>
+            </div>
+            <div className="detail-box">
+              <h5>
+                Best Quality
+              </h5>
+              <p>
+                variations of passages of Lorem Ipsum available
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* end why section */}
+  {/* gift section */}
+  <section className="gift_section layout_padding-bottom">
+    <div className="box ">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-md-5">
+            <div className="img_container">
+              <div className="img-box">
+                <img src="images/gifts.png" alt />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-7">
+            <div className="detail-box">
+              <div className="heading_container">
+                <h2>
+                  Gifts for your <br />
+                  loved ones
+                </h2>
+              </div>
+              <p>
+                Omnis ex nam laudantium odit illum harum, excepturi accusamus at corrupti, velit blanditiis unde perspiciatis, vitae minus culpa? Beatae at aut consequuntur porro adipisci aliquam eaque iste ducimus expedita accusantium?
+              </p>
+              <div className="btn-box">
+                <a href="#" className="btn1">
+                  Buy Now
+                </a>
+                <a href="#" className="btn2">
+                  See More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* end gift section */}
+  {/* contact section */}
+  <section className="contact_section ">
+    <div className="container px-0">
+      <div className="heading_container ">
+        <h2 className>
+          Contact Us
+        </h2>
+      </div>
+    </div>
+    <div className="container container-bg">
+      <div className="row">
+        <div className="col-lg-7 col-md-6 px-0">
+          <div className="map_container">
+            <div className="map-responsive">
+              <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width={600} height={300} frameBorder={0} style={{border: 0, width: '100%', height: '100%'}} allowFullScreen />
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-5 px-0">
+          <form action="#">
+            <div>
+              <input type="text" placeholder="Name" />
+            </div>
+            <div>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div>
+              <input type="text" placeholder="Phone" />
+            </div>
+            <div>
+              <input type="text" className="message-box" placeholder="Message" />
+            </div>
+            <div className="d-flex ">
+              <button>
+                SEND
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* end contact section */}
+  {/* client section */}
+  <section className="client_section layout_padding">
+    <div className="container">
+      <div className="heading_container heading_center">
+        <h2>
+          Testimonial
+        </h2>
+      </div>
+    </div>
+    <div className="container px-0">
+      <div id="customCarousel2" className="carousel  carousel-fade" data-ride="carousel">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <div className="box">
+              <div className="client_info">
+                <div className="client_name">
+                  <h5>
+                    Morijorch
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i className="fa fa-quote-left" aria-hidden="true" />
+              </div>
+              <p>
+                editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="box">
+              <div className="client_info">
+                <div className="client_name">
+                  <h5>
+                    Rochak
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i className="fa fa-quote-left" aria-hidden="true" />
+              </div>
+              <p>
+                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="box">
+              <div className="client_info">
+                <div className="client_name">
+                  <h5>
+                    Brad Johns
+                  </h5>
+                  <h6>
+                    Default model text
+                  </h6>
+                </div>
+                <i className="fa fa-quote-left" aria-hidden="true" />
+              </div>
+              <p>
+                Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy, editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Variouseditors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="carousel_btn-box">
+          <a className="carousel-control-prev" href="#customCarousel2" role="button" data-slide="prev">
+            <i className="fa fa-angle-left" aria-hidden="true" />
+            <span className="sr-only">Previous</span>
+          </a>
+          <a className="carousel-control-next" href="#customCarousel2" role="button" data-slide="next">
+            <i className="fa fa-angle-right" aria-hidden="true" />
+            <span className="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  {/* end client section */}
+  {/* info section */}
+  <section className="info_section  layout_padding2-top">
+    <div className="social_container">
+      <div className="social_box">
+        <a href>
+          <i className="fa fa-facebook" aria-hidden="true" />
+        </a>
+        <a href>
+          <i className="fa fa-twitter" aria-hidden="true" />
+        </a>
+        <a href>
+          <i className="fa fa-instagram" aria-hidden="true" />
+        </a>
+        <a href>
+          <i className="fa fa-youtube" aria-hidden="true" />
+        </a>
+      </div>
+    </div>
+    <div className="info_container ">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-6 col-lg-3">
+            <h6>
+              ABOUT US
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+            </p>
+          </div>
+          <div className="col-md-6 col-lg-3">
+            <div className="info_form ">
+              <h5>
+                Newsletter
+              </h5>
+              <form action="#">
+                <input type="email" placeholder="Enter your email" />
+                <button>
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+          <div className="col-md-6 col-lg-3">
+            <h6>
+              NEED HELP
+            </h6>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet, consectetur adipiscing elit, sed doLorem ipsum dolor sit amet,
+            </p>
+          </div>
+          <div className="col-md-6 col-lg-3">
+            <h6>
+              CONTACT US
+            </h6>
+            <div className="info_link-box">
+              <a href>
+                <i className="fa fa-map-marker" aria-hidden="true" />
+                <span> Gb road 123 london Uk </span>
+              </a>
+              <a href>
+                <i className="fa fa-phone" aria-hidden="true" />
+                <span>+01 12345678901</span>
+              </a>
+              <a href>
+                <i className="fa fa-envelope" aria-hidden="true" />
+                <span> demo@gmail.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {/* footer section */}
+    <footer className=" footer_section">
+      <div className="container">
+        <p>
+          © <span id="displayYear" /> All Rights Reserved By
+          <a href="https://html.design/">Free Html Templates</a>
+        </p>
+      </div>
+    </footer>
+    {/* footer section */}
+  </section>
+  {/* end info section */}
+</div>
+
   );
 };
 
