@@ -1,5 +1,7 @@
+import { JackInTheBox } from "react-awesome-reveal";
 const Ratings = () => {
     return (
+      <JackInTheBox>
       <div className="rating">
         <h2>rating</h2>
         <p>Experience ⭐⭐⭐⭐⭐</p>
@@ -11,6 +13,7 @@ const Ratings = () => {
         <p>SSCR@gmail.com</p>
         <p>www.sscr.com</p>
       </div>
+      </JackInTheBox>
     );
 };
 
