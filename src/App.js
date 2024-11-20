@@ -1,4 +1,4 @@
-import "./App.css";
+import About from "./component/About";
 import Edu from "./component/Edu";
 import Img from "./component/Img";
 import ListCar from "./component/ListCar";

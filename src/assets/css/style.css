@@ -7,7 +7,7 @@
     format("woff");
 }
 #mainbg {
-  width: 792px;
+  width: 1600px;
   height: auto;
   background-color: #100f0f;
   margin-left: auto;
@@ -72,8 +72,7 @@ p {
   display: flex;
   justify-content: space-evenly;
 }
-.edu,
-.skills {
+.edu{
   border: 2px;
   width: 40%;
   padding-left: 10%;
@@ -90,4 +89,10 @@ p {
 .image{
     padding: 10%;
     width: 100%;
+}
+.ratings {
+  border: 2px;
+  width: 40%;
+  padding-right: 10%;
+
 }

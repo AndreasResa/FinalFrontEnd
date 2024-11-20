@@ -1,6 +1,10 @@
+import { Bounce, Fade, JackInTheBox, Roll, Rotate, Slide, Zoom } from "react-awesome-reveal";
+
 const ListCar = () => {
     return (
+        <Fade>
         <div id="Expcontainer">
+            <Bounce>
             <div>
             <h2>Fortuner</h2>
             <h3>Rp.500.000.000 </h3>
@@ -14,6 +18,8 @@ const ListCar = () => {
                 alt="Freepngimgcom"
             />
             </div>
+            </Bounce>
+            <Zoom>
             <div>
             <img className="image"
                 src="https://carnetwork.s3.ap-southeast-1.amazonaws.com/file/b1ccfc35280a4098b3977412c57e7e75.jpg"
@@ -27,6 +33,8 @@ const ListCar = () => {
             The Toyota Innova is a family-friendly MPV with a roomy cabin and optimal comfort. Equipped with an efficient engine and stable performance, the Innova is suitable for everyday use or long journeys. The interior is ergonomically designed with comprehensive entertainment and safety features.
             </p>
             </div>
+            </Zoom>
+            <JackInTheBox>
             <div>
             <h2>CR-V Turbo Editon</h2>
             <h3>Rp.800.000.000</h3>
@@ -40,6 +48,8 @@ const ListCar = () => {
                 alt="Freepngimgcom"
             />
             </div>
+            </JackInTheBox>
+            <Rotate>
             <div>
             <img className="image"
                 src="https://img.remediosdigitales.com/c2adeb/toyota-avanza-2022_/1366_2000.jpg"
@@ -53,6 +63,8 @@ const ListCar = () => {
             The Toyota Avanza is a compact MPV renowned for its fuel efficiency and affordability. With a capacity of up to 7 passengers, it’s a popular choice for families in Indonesia. It’s easy to maintain and available in both manual and automatic transmissions.
             </p>
             </div>
+            </Rotate>
+            <Zoom>
             <div>
             <h2>Honda City</h2>
             <h3>Rp.350.000.000</h3>
@@ -66,6 +78,8 @@ const ListCar = () => {
                 alt="Freepngimgcom"
             />
             </div>
+            </Zoom>
+            <Zoom>
             <div>
             <img className="image"
                 src="https://tconline.com.br/wp-content/uploads/2020/07/6.2-scaled.jpg"
@@ -79,6 +93,8 @@ const ListCar = () => {
             The Honda Civic is a sporty sedan with an aerodynamic design and impressive engine performance. It offers a modern interior with advanced digital features, making it a great choice for those seeking style, comfort, and performance.
             </p>
             </div>
+            </Zoom>
+            <Slide>
             <div>
             <h2>Pajero</h2>
             <h3>Rp.500.000.000</h3>
@@ -92,6 +108,8 @@ const ListCar = () => {
                 alt="Freepngimgcom"
             />
             </div>
+            </Slide>
+            <Roll>
             <div>
             <img className="image"
                 src="https://imgcdn.oto.com/large/gallery/color/28/1635/mitsubishi-xpander-color-793751.jpg"
@@ -105,7 +123,9 @@ const ListCar = () => {
             The Mitsubishi Xpander is a modern MPV with a futuristic design, perfect for families. It offers a spacious cabin, full comfort features, and a smooth suspension for both city and intercity journeys.
             </p>
             </div>
+            </Roll>
       </div>
+      </Fade>
     )
 };
 
